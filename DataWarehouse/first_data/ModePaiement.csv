@@ -1,0 +1,5 @@
+ClefModePaiement,CodePaiement,Description,TypePaiement
+1,CB,Carte Bancaire,Électronique
+2,ESP,Espèces,Manuel
+3,CHQ,Chèque,Manuel
+4,PAY,PayPal,Électronique

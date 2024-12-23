@@ -120,13 +120,13 @@ payment_modes = [
 ]
 df_payment_modes = pd.DataFrame(payment_modes)
 
-df_calendar.to_csv("Calendrier.csv", index=False)
-df_time.to_csv("Temps.csv", index=False)
-df_cash_registers.to_csv("Caisse.csv", index=False)
-df_stores.to_csv("Magasin.csv", index=False)
-df_promotions.to_csv("Promotion.csv", index=False)
-df_products.to_csv("Produit.csv", index=False)
-df_clients.to_csv("Client.csv", index=False)
-df_payment_modes.to_csv("ModePaiement.csv", index=False)
+df_calendar.to_csv("./data/Calendrier.csv", index=False)
+df_time.to_csv("./data/Temps.csv", index=False)
+df_cash_registers.to_csv("./data/Caisse.csv", index=False)
+df_stores.to_csv("./data/Magasin.csv", index=False)
+df_promotions.to_csv("./data/Promotion.csv", index=False)
+df_products.to_csv("./data/Produit.csv", index=False)
+df_clients.to_csv("./data/Client.csv", index=False)
+df_payment_modes.to_csv("./data/ModePaiement.csv", index=False)
 
 print("Datasets generated and saved as CSV files.")
