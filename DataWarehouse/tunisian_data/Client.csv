@@ -1,0 +1,101 @@
+ClefClient,NomClient,PrenomClient,NumeroCarteClient,VilleClient,SexeClient,Age,RevenusFoyer
+1,Bertrand,Anastasie,3bde9214-4c66-4f8d-9ca7-40cb00b97d52,Gabès,Homme,23,8191
+2,Couturier,Inès,efb38674-b218-423a-ad7e-6ab31d761c45,Kairouan,Femme,48,4254
+3,Delattre,Michelle,7e71b54c-28af-47c7-99e4-2f65abede228,Tunis,Femme,38,8701
+4,Rodriguez,Diane,5c2c39e8-74f6-44a1-b523-12044c0942cc,Sfax,Homme,63,7469
+5,Munoz,Christophe,afcef1ff-b84f-44da-a598-707121230430,Ben Arous,Femme,61,7882
+6,Adam,Valérie,aebc737a-0c81-463f-8ea9-c00ba2fc2fca,Ariana,Homme,30,4642
+7,Colin,Grégoire,a36fff4e-32fe-40f3-8533-f02e9dc63cea,Bizerte,Femme,21,3152
+8,Pinto,Michelle,4febb00c-dff9-4276-b865-482cdac7e927,Gabès,Homme,31,9736
+9,Moreno,Hélène,824def8b-5548-4971-adbc-0cf91e9ab0d0,Nabeul,Homme,47,17571
+10,Muller,Virginie,67bbdbf6-6dac-4281-85a6-b1d3bcf5585e,Nabeul,Homme,32,11203
+11,Meunier,Sébastien,21e906c7-c62d-4d8f-8f9d-6db091627d08,Sfax,Homme,40,15532
+12,Bourdon,Marine,d2a2c454-5c22-43ea-a2f8-c30835428a10,Sousse,Femme,31,6470
+13,Lefèvre,Monique,8b6712a2-99bd-4f11-9804-5592101ff783,Nabeul,Femme,46,7119
+14,Durand,Élodie,0d167520-e46e-4349-9169-f41d7381aeaa,Ben Arous,Femme,64,6790
+15,Garcia,Timothée,53022762-ed48-4191-ac2b-9efcb71bdb40,Tunis,Homme,19,6884
+16,Costa,André,ba377886-3471-427c-96d6-c13d353f0d59,Sfax,Femme,62,19989
+17,Gautier,Guillaume,703682d3-dee4-4467-87ea-134c7b1fb44e,Monastir,Femme,44,9273
+18,Pierre,Diane,8eb94b66-4516-42bf-8019-3d20edc5a448,Gabès,Homme,55,5288
+19,Roy,Léon,195fdf49-dad9-4497-8a15-db68fbaa4791,Tunis,Femme,38,19143
+20,Lucas,Gérard,9b8357e6-4dd6-40c1-89b9-f346b81fec30,Gabès,Homme,45,6451
+21,Marion,Émilie,b71ff8a6-232d-4d04-8c9e-9f4d705e2806,Tunis,Femme,52,11305
+22,Maillard,David,bff90ee4-1ad1-46af-a8fb-3dcb5dc9a042,Gabès,Homme,54,2639
+23,Rivière,Célina,9f937856-cce3-42c0-a8ba-a5de48de3480,Ariana,Homme,35,10360
+24,Lambert,Virginie,063f6e67-2808-43a2-ac1d-4a10c4b7461a,Nabeul,Homme,41,7911
+25,Buisson,Thibault,f4e909fe-b3d5-49d0-bf95-30f90a688a35,Nabeul,Femme,58,19709
+26,Godard,Alix,6d376555-3162-4587-852a-93e5aa2181b9,Gabès,Homme,18,9763
+27,Regnier,Gilbert,62d0a658-d873-4ebf-8464-e7883ba04e0b,Kairouan,Homme,50,6876
+28,Briand,Timothée,0a9720fb-f734-42ab-bef9-1e7b4287f80d,Sousse,Homme,31,16719
+29,David,Constance,64e7b16e-63af-435e-9108-e82f1fd6f426,Ben Arous,Homme,49,2393
+30,Pichon,Emmanuelle,1b4721c1-c665-4582-acf5-c19748b9cea8,Gabès,Homme,41,6224
+31,Pruvost,Catherine,54c5ac99-fdf6-4e13-b424-fe38c92ddfcd,Tunis,Femme,67,9043
+32,Millet,Alain,00176f2b-5db9-4024-8639-2a2e52e6b0d1,Monastir,Femme,19,11529
+33,Lopez,Anaïs,c8645dc0-e85f-4ab8-b1b0-bb2e5aa663af,Gabès,Femme,21,11644
+34,Brunet,Capucine,0558e77e-d0db-478d-aeff-93570dacb5ee,Sousse,Homme,36,13686
+35,Gallet,Philippe,fc972bf4-327b-45b4-bcad-cf41c3efa043,Sfax,Femme,33,12185
+36,Roussel,Pénélope,7bcdb544-de09-4f67-b5aa-fc9b113d6bc9,Gabès,Homme,37,10840
+37,Barre,Noémi,1f057aa1-bc65-462a-9144-8282259767db,Tunis,Femme,29,3790
+38,Turpin,Nicolas,4b738403-66cb-4e3b-ba17-8c66a25240f2,Kairouan,Femme,51,15727
+39,Jourdan,Stéphanie,7c0facee-41e7-4383-8b3a-77bcd8f617a8,Sfax,Femme,38,19067
+40,Turpin,Robert,48dda3c6-b09e-4a00-9c7f-51a5a9ca4384,Monastir,Homme,65,13539
+41,Garnier,Bertrand,53757340-c4d1-47b5-97a7-ea241bb46d2d,Ariana,Femme,65,9152
+42,Delorme,Hugues,d60730b9-e0a0-43d2-8aca-7f4b801a4069,Tunis,Homme,45,2170
+43,Hebert,Alex,22e79c5a-7120-4d6e-9c9c-89b5caf6dea1,Sfax,Homme,21,11240
+44,Étienne,Nath,be0954aa-6340-4d15-87af-fc2e69005441,Ben Arous,Femme,60,2693
+45,Guillon,Agathe,fe13f003-a29d-47fd-b0b3-11a81982de0b,Ben Arous,Homme,30,15027
+46,Valette,Gérard,0cadd0dc-6121-460b-81d9-7009c309bb06,Sfax,Femme,21,19220
+47,Lamy,Bertrand,021ae736-8c82-4c59-883e-89cb4cee8be4,Sfax,Homme,18,18677
+48,Munoz,Clémence,7f0eb9bc-0151-4272-af38-95e0b11861ba,Nabeul,Femme,50,11754
+49,Dumont,Inès,1282e71c-7024-499d-9686-f09162817eb5,Ariana,Homme,31,2183
+50,Leleu,Michelle,2d32badc-1306-41a6-9f14-30a08b84819e,Sfax,Femme,20,5333
+51,Clerc,Hortense,8d368666-1394-44cc-9b33-2776cec9f734,Gabès,Homme,54,17888
+52,Gauthier,Camille,2b955ea9-4d7f-4052-baee-1c50e533adbe,Nabeul,Homme,27,9141
+53,Lopes,Luc,986db9ae-0cc5-4a61-978c-94c9525b4f64,Tunis,Homme,27,16738
+54,Lopes,Émile,81f8f7fe-72a8-4c58-999c-113b4fae1248,Sfax,Homme,33,13381
+55,Guichard,Richard,112e9654-572a-434d-b8ed-124b3d14cbcb,Ariana,Homme,70,7654
+56,Carlier,Laetitia,964c39f9-49b2-4e9a-845f-67cb8c965ee0,Ariana,Homme,42,3911
+57,Marques,Xavier,8f71a6e4-31e3-49ac-b608-9729ad4688f2,Monastir,Femme,30,8834
+58,Lejeune,Audrey,d55f9766-02cc-4a2e-8aee-0e0d9e65609e,Tunis,Femme,55,4818
+59,Hoareau,Charlotte,3e9aceb4-7eb2-4969-811e-24ba7cd7a6d5,Bizerte,Femme,54,5333
+60,Philippe,Noémi,5e68401b-15a0-4b0d-bda0-15148021f4e7,Nabeul,Homme,41,12881
+61,Salmon,Olivie,8e845690-8068-4990-926a-b741ea8d63d5,Monastir,Homme,61,11478
+62,Michaud,Clémence,8b9fc46c-70ec-4d7a-b84c-90c39aef4e6d,Kairouan,Femme,48,7174
+63,Fabre,Yves,a71a8877-fd0c-434e-afac-1448c9c61b49,Ben Arous,Femme,44,3250
+64,Noël,Denis,3bd814c7-acc5-4a44-8892-26fd17a0f363,Bizerte,Homme,60,10689
+65,Neveu,Anastasie,66c8457e-1f1a-4fe3-85b5-a34bcc45f49b,Gabès,Homme,30,11606
+66,Toussaint,Dominique,493df56b-2705-4fea-b030-26fcc7442b46,Sfax,Femme,56,10500
+67,Moulin,Éric,3f20bdb1-7378-4dc3-858d-5869b083bf31,Gabès,Homme,38,3636
+68,Étienne,Laurence,f3acf2ad-b271-43cc-8afb-6ff4fb207136,Sfax,Femme,51,9182
+69,Hamon,Laurence,e64fd05a-beb7-42fb-ad05-6b4839a0050f,Sfax,Femme,53,5653
+70,Marie,Michelle,bd6f4a31-6e50-4a39-ba87-18060ac4b74b,Ariana,Homme,70,17079
+71,Allard,Odette,b2d3ef06-eb72-4654-b8c6-f3a3ba62d4ca,Sousse,Femme,54,12636
+72,Moulin,Pierre,c3b7412c-6e58-4624-b5e7-565e9c824dc3,Nabeul,Femme,63,19050
+73,Valentin,Margot,4dcfdd54-9b87-4543-a33e-e71f3e6c2edf,Tunis,Femme,50,15347
+74,Dufour,Tristan,8ae8e089-b9cc-40c7-8420-d363b0df2822,Nabeul,Femme,44,7334
+75,Descamps,Inès,c7bd41a2-0a0b-4f7b-bfed-3f3fcb53dbb3,Gabès,Homme,54,2689
+76,Henry,Alain,5d9f8fcd-24b3-4b3a-9797-e1ed62175ce4,Nabeul,Homme,62,7644
+77,Barbier,Stéphane,8d551245-34de-4f5e-a499-14766b35cae4,Tunis,Homme,26,5369
+78,Mahe,Claude,97ee8ccc-01a4-4d5a-b17f-3e23dbce5892,Tunis,Homme,59,4165
+79,Meunier,Joséphine,e7b930c5-f9bb-45e1-86c9-ec0f788a08eb,Nabeul,Femme,48,2670
+80,Baudry,Françoise,e4a3748f-054e-4bf3-8cf4-83f9dec267b1,Tunis,Homme,38,4915
+81,Rossi,Maggie,8399886a-bc11-40bc-b732-e09e8f47b1d3,Ariana,Homme,61,12442
+82,Dumont,Célina,3bd7cfc5-f897-4a42-a2a6-4fc9fa6264d4,Sousse,Femme,36,14573
+83,Pages,Joséphine,85c55193-88c3-44c3-bfae-0ce2a669bfe9,Sousse,Femme,32,6226
+84,Royer,Philippine,8e82791b-7759-427e-a408-c33ed716ae0e,Nabeul,Homme,70,17074
+85,Lucas,Édith,fef07e05-83f7-4232-9062-7a15c319cb3f,Nabeul,Homme,50,10613
+86,Reynaud,Gilles,c747b007-0ffc-465f-93d7-697988d1b76b,Gabès,Femme,39,5898
+87,Weiss,Dominique,aea9ca62-42c2-4b59-bff2-4a0eb81aa774,Ben Arous,Femme,32,16782
+88,Mahe,Xavier,cd10eb19-5919-4b51-804b-843e7343895a,Monastir,Femme,28,6571
+89,Bertin,Lorraine,829d494f-edfc-4243-8bcb-85f4a428b1da,Bizerte,Femme,26,12415
+90,Lelièvre,Aurélie,f5be5577-9dbe-4a12-9234-cf5efac6324d,Ariana,Homme,22,9425
+91,Cordier,Susanne,e52eddd5-6f28-499f-971c-2fac6a278a22,Ariana,Homme,27,6943
+92,Bodin,Caroline,5548dce5-5bd7-424a-92a6-0a6233db364d,Sousse,Homme,49,3954
+93,Thierry,Raymond,eaff5085-30a5-446f-8f22-15c24055cfd1,Ben Arous,Femme,30,7428
+94,Nicolas,Christophe,301c1259-91f9-49fd-a401-1efb297655ce,Sousse,Femme,57,15866
+95,Grenier,Théophile,ead2f410-1e68-4672-848b-bcbec10774dc,Sousse,Femme,37,12528
+96,Lebreton,Luce,0dd4c231-9109-47b7-9096-869857af9ef5,Ariana,Homme,37,8347
+97,Martinez,Frédérique,5c919a3b-2c51-4c27-ba53-884aa6b80667,Sfax,Homme,47,13302
+98,Perrier,Thibaut,eb16ef75-f77b-4af2-9f2d-a64c5d160ab7,Sousse,Homme,32,10838
+99,Berthelot,Thibaut,8e3164d4-fd09-48f0-8820-783de1701108,Bizerte,Homme,46,12393
+100,Vaillant,Susan,7f11e5e0-cd3d-463b-be50-2628f4c34d5f,Ben Arous,Femme,32,9108

@@ -2,7 +2,7 @@ import pandas as pd
 import random
 from faker import Faker
 
-fake = Faker()
+fake = Faker("fr_FR")
 
 n_calendar = 365
 n_time = 48
@@ -12,6 +12,16 @@ n_promotion = 10
 n_product = 50
 n_client = 100
 n_payment_mode = 4
+
+tunisian_cities = ["Tunis", "Sfax", "Sousse", "Gabès", "Bizerte",
+                   "Kairouan", "Ariana", "Monastir", "Ben Arous", "Nabeul"]
+tunisian_streets = ["Avenue Habib Bourguiba", "Rue de Marseille",
+                    "Rue Ibn Khaldoun", "Rue de la Liberté", "Rue Hedi Chaker"]
+tunisian_brands = ["Samsung", "Huawei", "Sagem",
+                   "Tunisie Telecom", "Ooredoo", "Orange"]
+tunisian_categories = ["Électronique", "Vêtements",
+                       "Alimentaire", "Meubles", "Hygiène"]
+tunisian_promotion_types = ["Réduction", "Montant Fixe", "Produit Offert"]
 
 calendar = []
 for i in range(1, n_calendar + 1):
@@ -49,7 +59,7 @@ for i in range(1, n_cash_register + 1):
     cash_registers.append({
         "ClefCaisse": i,
         "NumeroCaisse": fake.random_int(min=1000, max=9999),
-        "TypeCaisse": random.choice(["Self-Service", "Standard", "Express"])
+        "TypeCaisse": random.choice(["Libre-Service", "Standard", "Express"])
     })
 df_cash_registers = pd.DataFrame(cash_registers)
 
@@ -58,9 +68,9 @@ for i in range(1, n_store + 1):
     stores.append({
         "ClefMagasin": i,
         "NomMagasin": fake.company(),
-        "Rue": fake.street_address(),
-        "Ville": fake.city(),
-        "Pays": fake.country(),
+        "Rue": random.choice(tunisian_streets),
+        "Ville": random.choice(tunisian_cities),
+        "Pays": "Tunisie",
         "Directeur": fake.name(),
         "Zone": fake.city_suffix(),
         "DatePremiereOuverture": fake.date_between(start_date='-20y', end_date='-5y'),
@@ -75,7 +85,7 @@ for i in range(1, n_promotion + 1):
         "ClefPromotion": i,
         "CodePromotion": f"P{i:03}",
         "NomPromotion": fake.catch_phrase(),
-        "TypePromotion": random.choice(["Pourcentage", "Montant Fixe", "Offre Gratuite"]),
+        "TypePromotion": random.choice(tunisian_promotion_types),
         "DateDebut": start_date,
         "DateFin": fake.date_between(start_date=start_date, end_date='+1m')
     })
@@ -87,8 +97,8 @@ for i in range(1, n_product + 1):
         "ClefProduit": i,
         "CodeProduit": f"PRD{i:03}",
         "DescriptionProduit": fake.catch_phrase(),
-        "MarqueProduit": random.choice(["Samsung", "Apple", "Sony", "LG", "HP"]),
-        "CategorieProduit": random.choice(["Électronique", "Vêtements", "Alimentaire", "Meubles"]),
+        "MarqueProduit": random.choice(tunisian_brands),
+        "CategorieProduit": random.choice(tunisian_categories),
         "Rayon": fake.word(),
         "PrixProduitRecommande": round(random.uniform(5, 1000), 2)
     })
@@ -101,22 +111,18 @@ for i in range(1, n_client + 1):
         "NomClient": fake.last_name(),
         "PrenomClient": fake.first_name(),
         "NumeroCarteClient": fake.uuid4(),
-        "VilleClient": fake.city(),
+        "VilleClient": random.choice(tunisian_cities),
         "SexeClient": random.choice(["Homme", "Femme"]),
         "Age": random.randint(18, 70),
-        "RevenusFoyer": random.randint(20000, 100000)
+        "RevenusFoyer": random.randint(2000, 20000)
     })
 df_clients = pd.DataFrame(clients)
 
 payment_modes = [
-    {"ClefModePaiement": 1, "CodePaiement": "CB",
-        "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
-    {"ClefModePaiement": 2, "CodePaiement": "ESP",
-        "Description": "Espèces", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 3, "CodePaiement": "CHQ",
-        "Description": "Chèque", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 4, "CodePaiement": "PAY",
-        "Description": "PayPal", "TypePaiement": "Électronique"}
+    {"ClefModePaiement": 1, "CodePaiement": "CB", "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
+    {"ClefModePaiement": 2, "CodePaiement": "ESP", "Description": "Espèces", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 3, "CodePaiement": "CHQ", "Description": "Chèque", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 4, "CodePaiement": "PAY", "Description": "PayPal", "TypePaiement": "Électronique"}
 ]
 df_payment_modes = pd.DataFrame(payment_modes)
 
@@ -129,4 +135,4 @@ df_products.to_csv("Produit.csv", index=False)
 df_clients.to_csv("Client.csv", index=False)
 df_payment_modes.to_csv("ModePaiement.csv", index=False)
 
-print("Datasets generated and saved as CSV files.")
+print("Tunisian datasets generated and saved as CSV files.")
