@@ -1,0 +1,26 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.pdb
+*.obj
+*.exe
+*.dll
+*.dbmdl
+*.bak
+*.sqlproj.user
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore SQL Server data files
+*.mdf
+*.ldf
+
+# Ignore other temporary files
+*.tmp
+*.temp
