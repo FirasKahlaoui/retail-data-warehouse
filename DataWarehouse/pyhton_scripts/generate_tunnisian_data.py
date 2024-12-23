@@ -119,20 +119,24 @@ for i in range(1, n_client + 1):
 df_clients = pd.DataFrame(clients)
 
 payment_modes = [
-    {"ClefModePaiement": 1, "CodePaiement": "CB", "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
-    {"ClefModePaiement": 2, "CodePaiement": "ESP", "Description": "Espèces", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 3, "CodePaiement": "CHQ", "Description": "Chèque", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 4, "CodePaiement": "PAY", "Description": "PayPal", "TypePaiement": "Électronique"}
+    {"ClefModePaiement": 1, "CodePaiement": "CB",
+        "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
+    {"ClefModePaiement": 2, "CodePaiement": "ESP",
+        "Description": "Espèces", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 3, "CodePaiement": "CHQ",
+        "Description": "Chèque", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 4, "CodePaiement": "PAY",
+        "Description": "PayPal", "TypePaiement": "Électronique"}
 ]
 df_payment_modes = pd.DataFrame(payment_modes)
 
-df_calendar.to_csv("Calendrier.csv", index=False)
-df_time.to_csv("Temps.csv", index=False)
-df_cash_registers.to_csv("Caisse.csv", index=False)
-df_stores.to_csv("Magasin.csv", index=False)
-df_promotions.to_csv("Promotion.csv", index=False)
-df_products.to_csv("Produit.csv", index=False)
-df_clients.to_csv("Client.csv", index=False)
-df_payment_modes.to_csv("ModePaiement.csv", index=False)
+df_calendar.to_excel("Calendrier.xlsx", index=False)
+df_time.to_excel("Temps.xlsx", index=False)
+df_cash_registers.to_excel("Caisse.xlsx", index=False)
+df_stores.to_excel("Magasin.xlsx", index=False)
+df_promotions.to_excel("Promotion.xlsx", index=False)
+df_products.to_excel("Produit.xlsx", index=False)
+df_clients.to_excel("Client.xlsx", index=False)
+df_payment_modes.to_excel("ModePaiement.xlsx", index=False)
 
-print("Tunisian datasets generated and saved as CSV files.")
+print("Tunisian datasets generated and saved as separate Excel files.")
