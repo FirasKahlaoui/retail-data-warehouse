@@ -1,0 +1,239 @@
+﻿TotalSalesAmount
+---------------------------------------
+287174.99
+
+    (1 row(s) affected)
+    
+
+TotalQuantitySold
+-----------------
+5389
+
+    (1 row(s) affected)
+    
+
+AvgSalesAmount
+---------------------------------------
+287.174990
+
+    (1 row(s) affected)
+    
+
+UniqueCustomers
+---------------
+100
+
+    (1 row(s) affected)
+    
+
+ClefProduit TotalQuantity
+----------- -------------
+38          158
+2           157
+40          153
+49          153
+17          147
+21          145
+45          134
+11          131
+3           129
+6           126
+41          125
+12          124
+14          123
+28          120
+35          116
+36          116
+24          116
+27          115
+19          113
+31          112
+37          111
+42          111
+30          111
+50          110
+1           110
+39          110
+15          107
+44          103
+47          101
+23          101
+43          101
+22          101
+48          100
+26          98
+9           98
+25          97
+33          97
+8           93
+13          89
+10          88
+16          87
+34          86
+7           86
+46          80
+20          79
+32          78
+4           77
+5           70
+29          50
+18          46
+
+    (50 row(s) affected)
+    
+
+NomMagasin                                                                                           Annee       Mois        ChiffreAffaires
+---------------------------------------------------------------------------------------------------- ----------- ----------- ---------------------------------------
+Boulay Lebon et Fils                                                                                 2023        12          429.43
+Boulay Lebon et Fils                                                                                 2024        1           5012.04
+Boulay Lebon et Fils                                                                                 2024        2           5527.01
+Boulay Lebon et Fils                                                                                 2024        3           7544.81
+Boulay Lebon et Fils                                                                                 2024        4           4156.12
+Boulay Lebon et Fils                                                                                 2024        5           5890.12
+Boulay Lebon et Fils                                                                                 2024        6           4233.27
+Boulay Lebon et Fils                                                                                 2024        7           6290.93
+Boulay Lebon et Fils                                                                                 2024        8           7418.24
+Boulay Lebon et Fils                                                                                 2024        9           5338.72
+Boulay Lebon et Fils                                                                                 2024        10          2262.95
+Boulay Lebon et Fils                                                                                 2024        11          5697.77
+Boulay Lebon et Fils                                                                                 2024        12          2895.28
+Brunet Picard et Fils                                                                                2023        12          1345.13
+Brunet Picard et Fils                                                                                2024        1           3641.31
+Brunet Picard et Fils                                                                                2024        2           3484.92
+Brunet Picard et Fils                                                                                2024        3           5292.56
+Brunet Picard et Fils                                                                                2024        4           4915.03
+Brunet Picard et Fils                                                                                2024        5           4254.35
+Brunet Picard et Fils                                                                                2024        6           3230.02
+Brunet Picard et Fils                                                                                2024        7           3722.66
+Brunet Picard et Fils                                                                                2024        8           3222.11
+Brunet Picard et Fils                                                                                2024        9           5239.51
+Brunet Picard et Fils                                                                                2024        10          3878.38
+Brunet Picard et Fils                                                                                2024        11          5850.89
+Brunet Picard et Fils                                                                                2024        12          2644.06
+Brunet S.A.R.L.                                                                                      2023        12          1256.71
+Brunet S.A.R.L.                                                                                      2024        1           4102.66
+Brunet S.A.R.L.                                                                                      2024        2           4728.46
+Brunet S.A.R.L.                                                                                      2024        3           5249.39
+Brunet S.A.R.L.                                                                                      2024        4           3602.57
+Brunet S.A.R.L.                                                                                      2024        5           4507.14
+Brunet S.A.R.L.                                                                                      2024        6           4504.19
+Brunet S.A.R.L.                                                                                      2024        7           7289.28
+Brunet S.A.R.L.                                                                                      2024        8           4507.45
+Brunet S.A.R.L.                                                                                      2024        9           7262.55
+Brunet S.A.R.L.                                                                                      2024        10          4886.03
+Brunet S.A.R.L.                                                                                      2024        11          3558.08
+Brunet S.A.R.L.                                                                                      2024        12          2848.28
+Cousin                                                                                               2023        12          1506.95
+Cousin                                                                                               2024        1           6497.16
+Cousin                                                                                               2024        2           2903.68
+Cousin                                                                                               2024        3           6581.02
+Cousin                                                                                               2024        4           3423.31
+Cousin                                                                                               2024        5           4234.27
+Cousin                                                                                               2024        6           6045.01
+Cousin                                                                                               2024        7           5838.79
+Cousin                                                                                               2024        8           3985.67
+Cousin                                                                                               2024        9           5709.55
+Cousin                                                                                               2024        10          4342.86
+Cousin                                                                                               2024        11          6519.72
+Cousin                                                                                               2024        12          2773.40
+Rousset                                                                                              2023        12          834.61
+Rousset                                                                                              2024        1           6638.41
+Rousset                                                                                              2024        2           4397.21
+Rousset                                                                                              2024        3           5056.69
+Rousset                                                                                              2024        4           5831.48
+Rousset                                                                                              2024        5           5614.38
+Rousset                                                                                              2024        6           3133.86
+Rousset                                                                                              2024        7           2157.39
+Rousset                                                                                              2024        8           3162.80
+Rousset                                                                                              2024        9           4654.31
+Rousset                                                                                              2024        10          3023.31
+Rousset                                                                                              2024        11          5527.08
+Rousset                                                                                              2024        12          5061.66
+
+    (65 row(s) affected)
+    
+
+Ville                                                                                                ModePaiement                                                                                                                                                                                                                                                    NombrePaiements
+---------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------
+Ben Arous                                                                                            Carte Bancaire                                                                                                                                                                                                                                                  57
+Ben Arous                                                                                            Chèque                                                                                                                                                                                                                                                          52
+Ben Arous                                                                                            Espèces                                                                                                                                                                                                                                                         55
+Ben Arous                                                                                            PayPal                                                                                                                                                                                                                                                          46
+Gabès                                                                                                Carte Bancaire                                                                                                                                                                                                                                                  48
+Gabès                                                                                                Chèque                                                                                                                                                                                                                                                          54
+Gabès                                                                                                Espèces                                                                                                                                                                                                                                                         32
+Gabès                                                                                                PayPal                                                                                                                                                                                                                                                          48
+Monastir                                                                                             Carte Bancaire                                                                                                                                                                                                                                                  52
+Monastir                                                                                             Chèque                                                                                                                                                                                                                                                          56
+Monastir                                                                                             Espèces                                                                                                                                                                                                                                                         51
+Monastir                                                                                             PayPal                                                                                                                                                                                                                                                          49
+Nabeul                                                                                               Carte Bancaire                                                                                                                                                                                                                                                  52
+Nabeul                                                                                               Chèque                                                                                                                                                                                                                                                          42
+Nabeul                                                                                               Espèces                                                                                                                                                                                                                                                         56
+Nabeul                                                                                               PayPal                                                                                                                                                                                                                                                          47
+Tunis                                                                                                Carte Bancaire                                                                                                                                                                                                                                                  54
+Tunis                                                                                                Chèque                                                                                                                                                                                                                                                          48
+Tunis                                                                                                Espèces                                                                                                                                                                                                                                                         52
+Tunis                                                                                                PayPal                                                                                                                                                                                                                                                          49
+
+    (20 row(s) affected)
+    
+
+CategorieProduit                                                                                     TauxReductionMoyen
+---------------------------------------------------------------------------------------------------- ---------------------------------------
+Hygiène                                                                                              5.3020294258148278972
+Alimentaire                                                                                          4.8535614497859584392
+Meubles                                                                                              4.7861419052351853068
+Vêtements                                                                                            4.5905013579272083542
+Électronique                                                                                         4.1309053302831180946
+
+    (5 row(s) affected)
+    
+
+TrancheAge Ville                                                                                                NombreClients
+---------- ---------------------------------------------------------------------------------------------------- -------------
+18-25      Ben Arous                                                                                            15
+18-25      Gabès                                                                                                12
+18-25      Monastir                                                                                             14
+18-25      Nabeul                                                                                               13
+18-25      Tunis                                                                                                16
+26-35      Ben Arous                                                                                            16
+26-35      Gabès                                                                                                16
+26-35      Monastir                                                                                             17
+26-35      Nabeul                                                                                               19
+26-35      Tunis                                                                                                13
+36-45      Ben Arous                                                                                            17
+36-45      Gabès                                                                                                18
+36-45      Monastir                                                                                             20
+36-45      Nabeul                                                                                               18
+36-45      Tunis                                                                                                18
+46-55      Ben Arous                                                                                            11
+46-55      Gabès                                                                                                13
+46-55      Monastir                                                                                             14
+46-55      Nabeul                                                                                               11
+46-55      Tunis                                                                                                12
+55+        Ben Arous                                                                                            26
+55+        Gabès                                                                                                26
+55+        Monastir                                                                                             26
+55+        Nabeul                                                                                               25
+55+        Tunis                                                                                                28
+
+    (25 row(s) affected)
+    
+
+NomPromotion                                                                                         NombreVentes ChiffreAffaires                         TauxReductionMoyen
+---------------------------------------------------------------------------------------------------- ------------ --------------------------------------- ---------------------------------------
+L'assurance de rouler plus facilement                                                                113          33262.90                                3.7393089501213172257
+L'avantage de concrétiser vos projets sans soucis                                                    105          33124.47                                4.4582642263956271920
+Le pouvoir de louer naturellement                                                                    112          30790.73                                4.9462159319446314902
+La possibilité de louer à sa source                                                                  111          30749.14                                4.1321530741482459300
+L'avantage de rouler autrement                                                                       97           28936.28                                3.6360853145497962069
+L'art d'avancer plus rapidement                                                                      98           28604.28                                5.7174198565365262786
+La liberté de louer à l'état pur                                                                     99           26288.75                                6.5713696224761022939
+Le confort d'avancer à sa source                                                                     79           25682.13                                3.6212791886639839923
+L'assurance d'atteindre vos buts de manière sûre                                                     90           25366.85                                3.9695535200241977781
+La liberté de changer plus facilement                                                                96           24369.46                                7.1627291132427026062
+
+    (10 row(s) affected)
+    
+
