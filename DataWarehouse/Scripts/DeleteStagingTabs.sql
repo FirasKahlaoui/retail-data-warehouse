@@ -1,10 +1,21 @@
+-- Empty Staging Tables
+TRUNCATE TABLE StagingCalendrier;
+TRUNCATE TABLE StagingTemps;
+TRUNCATE TABLE StagingCaisse;
+TRUNCATE TABLE StagingMagasin;
+TRUNCATE TABLE StagingPromotion;
+TRUNCATE TABLE StagingProduit;
+TRUNCATE TABLE StagingClient;
+TRUNCATE TABLE StagingModePaiement;
+TRUNCATE TABLE StagingVenteProduits;
+
 -- Drop Staging Tables
-DROP TABLE IF EXISTS Staging_Calendrier;
-DROP TABLE IF EXISTS Staging_Temps;
-DROP TABLE IF EXISTS Staging_Caisse;
-DROP TABLE IF EXISTS Staging_Magasin;
-DROP TABLE IF EXISTS Staging_Promotion;
-DROP TABLE IF EXISTS Staging_Produit;
-DROP TABLE IF EXISTS Staging_Client;
-DROP TABLE IF EXISTS Staging_ModePaiement;
-DROP TABLE IF EXISTS Staging_VenteProduits;
+DROP TABLE IF EXISTS StagingCalendrier;
+DROP TABLE IF EXISTS StagingTemps;
+DROP TABLE IF EXISTS StagingCaisse;
+DROP TABLE IF EXISTS StagingMagasin;
+DROP TABLE IF EXISTS StagingPromotion;
+DROP TABLE IF EXISTS StagingProduit;
+DROP TABLE IF EXISTS StagingClient;
+DROP TABLE IF EXISTS StagingModePaiement;
+DROP TABLE IF EXISTS StagingVenteProduits;
