@@ -4,26 +4,26 @@ INSERT INTO VenteProduits (
     IDPaiement, Quantite, MontantUnitaire, CoutAchat, Montant, Reduction, MontantFinal
 )
 SELECT 
-    c.ClefDate,
-    t.ClefTemps,
-    cr.ClefCaisse,
-    s.ClefMagasin,
-    p.ClefPromotion,
-    pr.ClefProduit,
-    cl.ClefClient,
-    pm.ClefModePaiement,
-    sv.IDVente,
+    sv.ClefDate AS ClefDatePaiement,
+    sv.ClefTemps AS ClefHeurePaiement,
+    sv.IDCaissier AS ClefCaisse,
+    sv.IDMagasin AS ClefMagasin,
+    sv.IDPromotion AS ClefPromotion,
+    sv.IDProduit AS ClefProduit,
+    sv.IDClient AS ClefClient,
+    sv.IDModePaiement AS ClefModePaiement,
+    sv.IDVente AS IDPaiement,
     sv.Quantite,
-    sv.PrixUnitaire,
+    sv.PrixUnitaire AS MontantUnitaire,
     sv.CoutAchat,
     sv.Quantite * sv.PrixUnitaire AS Montant,
-    sv.Remise,
+    sv.Remise AS Reduction,
     (sv.Quantite * sv.PrixUnitaire) - sv.Remise AS MontantFinal
 FROM SourceVentes sv
-JOIN Calendrier c ON c.Date = CAST(sv.DateVente AS DATE)
-JOIN Temps t ON t.Temps = FORMAT(sv.DateVente, 'HH:mm')
-JOIN Caisse cr ON cr.NumeroCaisse = sv.IDCaissier
-JOIN Magasin s ON s.NumeroMagasin = sv.IDMagasin
+JOIN Calendrier c ON c.ClefDate = sv.ClefDate
+JOIN Temps t ON t.ClefTemps = sv.ClefTemps
+JOIN Caisse cr ON cr.ClefCaisse = sv.IDCaissier
+JOIN Magasin s ON s.ClefMagasin = sv.IDMagasin
 JOIN Promotion p ON p.ClefPromotion = sv.IDPromotion
 JOIN Produit pr ON pr.ClefProduit = sv.IDProduit
 JOIN Client cl ON cl.ClefClient = sv.IDClient
