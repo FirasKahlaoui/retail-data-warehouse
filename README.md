@@ -25,4 +25,3 @@ Des requêtes SQL ont été écrites pour générer des rapports de performance 
 ### 5. Organisation du Projet
 
 Le projet est organisé de manière à séparer les scripts SQL, les données sources et les scripts Python. Les scripts SQL sont placés dans le dossier `Scripts`, les fichiers de données sources dans le dossier `first_data`, et les scripts Python dans le dossier `python_scripts`.
-
