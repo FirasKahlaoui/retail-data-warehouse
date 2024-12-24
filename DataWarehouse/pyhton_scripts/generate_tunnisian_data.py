@@ -13,16 +13,21 @@ n_product = 50
 n_client = 100
 n_payment_mode = 4
 
-tunisian_cities = ["Tunis", "Sfax", "Sousse", "Gabès", "Bizerte",
-                   "Kairouan", "Ariana", "Monastir", "Ben Arous", "Nabeul"]
-tunisian_streets = ["Avenue Habib Bourguiba", "Rue de Marseille",
-                    "Rue Ibn Khaldoun", "Rue de la Liberté", "Rue Hedi Chaker"]
-tunisian_brands = ["Samsung", "Huawei", "Sagem",
-                   "Tunisie Telecom", "Ooredoo", "Orange"]
-tunisian_categories = ["Électronique", "Vêtements",
-                       "Alimentaire", "Meubles", "Hygiène"]
+# Tunisian-specific data
+tunisian_cities = ["Tunis", "Sfax", "Sousse", "Gabès", "Bizerte", "Kairouan", "Ariana", "Monastir", "Ben Arous", "Nabeul"]
+tunisian_streets = ["Avenue Habib Bourguiba", "Rue de Marseille", "Rue Ibn Khaldoun", "Rue de la Liberté", "Rue Hedi Chaker"]
+tunisian_brands = ["Samsung", "Huawei", "Sagem", "Tunisie Telecom", "Ooredoo", "Orange"]
+tunisian_categories = ["Électronique", "Vêtements", "Alimentaire", "Meubles", "Hygiène"]
 tunisian_promotion_types = ["Réduction", "Montant Fixe", "Produit Offert"]
+tunisian_governorates = [
+    "Tunis", "Ariana", "Ben Arous", "Manouba", "Sousse", "Monastir", 
+    "Mahdia", "Sfax", "Gabès", "Médenine", "Tataouine", "Gafsa", 
+    "Kasserine", "Kairouan", "Sidi Bouzid", "Beja", "Jendouba", 
+    "Le Kef", "Siliana", "Bizerte", "Nabeul", "Zaghouan", "Tozeur", 
+    "Kebili"
+]
 
+# Generate calendar data
 calendar = []
 for i in range(1, n_calendar + 1):
     date = fake.date_between(start_date='-1y', end_date='today')
@@ -38,6 +43,7 @@ for i in range(1, n_calendar + 1):
     })
 df_calendar = pd.DataFrame(calendar)
 
+# Generate time data
 time = []
 for i in range(1, n_time + 1):
     hour = random.randint(0, 23)
@@ -54,6 +60,7 @@ for i in range(1, n_time + 1):
     })
 df_time = pd.DataFrame(time)
 
+# Generate cash register data
 cash_registers = []
 for i in range(1, n_cash_register + 1):
     cash_registers.append({
@@ -63,21 +70,29 @@ for i in range(1, n_cash_register + 1):
     })
 df_cash_registers = pd.DataFrame(cash_registers)
 
+# Generate store data
 stores = []
 for i in range(1, n_store + 1):
     stores.append({
         "ClefMagasin": i,
         "NomMagasin": fake.company(),
+        "NumeroMagasin": fake.random_int(min=1, max=1000),
         "Rue": random.choice(tunisian_streets),
         "Ville": random.choice(tunisian_cities),
+        "Departement": random.choice(tunisian_governorates),
         "Pays": "Tunisie",
+        "CodePostal": fake.postcode(),
         "Directeur": fake.name(),
         "Zone": fake.city_suffix(),
+        "ZonePrecedente": fake.city_suffix(),
+        "Region": random.choice(tunisian_governorates),
+        "RegionPrecedente": random.choice(tunisian_governorates),
         "DatePremiereOuverture": fake.date_between(start_date='-20y', end_date='-5y'),
         "DateDerniereRenovation": fake.date_between(start_date='-5y', end_date='today')
     })
 df_stores = pd.DataFrame(stores)
 
+# Generate promotion data
 promotions = []
 for i in range(1, n_promotion + 1):
     start_date = fake.date_between(start_date='-1y', end_date='today')
@@ -91,6 +106,7 @@ for i in range(1, n_promotion + 1):
     })
 df_promotions = pd.DataFrame(promotions)
 
+# Generate product data
 products = []
 for i in range(1, n_product + 1):
     products.append({
@@ -104,6 +120,7 @@ for i in range(1, n_product + 1):
     })
 df_products = pd.DataFrame(products)
 
+# Generate client data
 clients = []
 for i in range(1, n_client + 1):
     clients.append({
@@ -118,25 +135,24 @@ for i in range(1, n_client + 1):
     })
 df_clients = pd.DataFrame(clients)
 
+# Generate payment mode data
 payment_modes = [
-    {"ClefModePaiement": 1, "CodePaiement": "CB",
-        "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
-    {"ClefModePaiement": 2, "CodePaiement": "ESP",
-        "Description": "Espèces", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 3, "CodePaiement": "CHQ",
-        "Description": "Chèque", "TypePaiement": "Manuel"},
-    {"ClefModePaiement": 4, "CodePaiement": "PAY",
-        "Description": "PayPal", "TypePaiement": "Électronique"}
+    {"ClefModePaiement": 1, "CodePaiement": "CB", "Description": "Carte Bancaire", "TypePaiement": "Électronique"},
+    {"ClefModePaiement": 2, "CodePaiement": "ESP", "Description": "Espèces", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 3, "CodePaiement": "CHQ", "Description": "Chèque", "TypePaiement": "Manuel"},
+    {"ClefModePaiement": 4, "CodePaiement": "PAY", "Description": "PayPal", "TypePaiement": "Électronique"}
 ]
 df_payment_modes = pd.DataFrame(payment_modes)
 
-df_calendar.to_excel("Calendrier.xlsx", index=False)
-df_time.to_excel("Temps.xlsx", index=False)
-df_cash_registers.to_excel("Caisse.xlsx", index=False)
-df_stores.to_excel("Magasin.xlsx", index=False)
-df_promotions.to_excel("Promotion.xlsx", index=False)
-df_products.to_excel("Produit.xlsx", index=False)
-df_clients.to_excel("Client.xlsx", index=False)
-df_payment_modes.to_excel("ModePaiement.xlsx", index=False)
+# Save datasets to a single Excel file with separate sheets
+with pd.ExcelWriter("Tunisian_Datasets.xlsx") as writer:
+    df_calendar.to_excel(writer, sheet_name="Calendrier", index=False)
+    df_time.to_excel(writer, sheet_name="Temps", index=False)
+    df_cash_registers.to_excel(writer, sheet_name="Caisse", index=False)
+    df_stores.to_excel(writer, sheet_name="Magasin", index=False)
+    df_promotions.to_excel(writer, sheet_name="Promotion", index=False)
+    df_products.to_excel(writer, sheet_name="Produit", index=False)
+    df_clients.to_excel(writer, sheet_name="Client", index=False)
+    df_payment_modes.to_excel(writer, sheet_name="ModePaiement", index=False)
 
-print("Tunisian datasets generated and saved as separate Excel files.")
+print("Tunisian datasets generated and saved in 'Tunisian_Datasets.xlsx'.")

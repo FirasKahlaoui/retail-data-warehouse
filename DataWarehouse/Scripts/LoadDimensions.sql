@@ -19,15 +19,24 @@ SELECT ClefDate, Date,
 FROM StagingCalendrier;
 
 INSERT INTO Temps (ClefTemps, Temps, Heure, Minute, AM_PM, JourNuit, HeureCreuse)
-SELECT ClefTemps, Temps, Heure, Minute, AM_PM, JourNuit, HeureCreuse
+SELECT ClefTemps, Temps, Heure, Minute, AM_PM, JourNuit, 
+       CASE 
+           WHEN HeureCreuse = 'Oui' THEN 1
+           WHEN HeureCreuse = 'Non' THEN 0
+           ELSE NULL
+       END AS HeureCreuse
 FROM StagingTemps;
 
 INSERT INTO Caisse (ClefCaisse, NumeroCaisse, TypeCaisse)
 SELECT ClefCaisse, NumeroCaisse, TypeCaisse
 FROM StagingCaisse;
 
-INSERT INTO Magasin (ClefMagasin, NomMagasin, Rue, Ville, Pays, Directeur, Zone, DatePremiereOuverture, DateDerniereRenovation)
-SELECT ClefMagasin, NomMagasin, Rue, Ville, Pays, Directeur, Zone, DatePremiereOuverture, DateDerniereRenovation
+INSERT INTO Magasin (ClefMagasin, NomMagasin, Rue, Ville, Pays, Directeur, Zone, DatePremiereOuverture, DateDerniereRenovation, NumeroMagasin)
+SELECT ClefMagasin, NomMagasin, Rue, Ville, Pays, Directeur, Zone, DatePremiereOuverture, DateDerniereRenovation,
+       CASE 
+           WHEN NumeroMagasin IS NULL THEN 0
+           ELSE NumeroMagasin
+       END AS NumeroMagasin
 FROM StagingMagasin;
 
 INSERT INTO Promotion (ClefPromotion, CodePromotion, NomPromotion, TypePromotion, DateDebut, DateFin)
