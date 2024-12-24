@@ -1,5 +1,3 @@
--- Simple KPIs
-
 -- Total Sales Amount
 SELECT SUM(MontantFinal) AS TotalSalesAmount
 FROM VenteProduits;
@@ -8,7 +6,6 @@ FROM VenteProduits;
 SELECT SUM(Quantite) AS TotalQuantitySold
 FROM VenteProduits;
 
--- Other KPIs
 
 -- Average Sales Amount per Transaction
 SELECT AVG(MontantFinal) AS AvgSalesAmount
@@ -22,8 +19,7 @@ FROM VenteProduits;
 SELECT ClefProduit, SUM(Quantite) AS TotalQuantity
 FROM VenteProduits
 GROUP BY ClefProduit
-ORDER BY TotalQuantity DESC
-LIMIT 10;  -- Adjust the limit as needed
+ORDER BY TotalQuantity DESC;
 
 -- Chiffre d'affaires par magasin et par mois
 SELECT 
