@@ -23,9 +23,9 @@ The repository includes SQL scripts, Python scripts for data generation, and doc
     - **DataWarehouse.sln**: Visual Studio solution file.
     - **DataWarehouse.sqlproj**: SQL Server project file.
     - **DataWarehouse.sqlproj.user**: User-specific project settings.
-- **python_scripts/**: Directory containing Python scripts for data generation.
-- **results/**: Directory containing the KPIs results.
-- **Scripts/**: Directory containing SQL scripts.
-- **tunisian_data/**: Directory containing Tunisian-specific data.
+- **Python Scripts/**: Directory containing Python scripts for data generation.
+- **Results/**: Directory containing the KPIs results.
+- **SQL Scripts/**: Directory containing SQL scripts.
+- **Data/**: Directory containing Tunisian-specific data.
 - **DataWarehouse Schema/**: Directory containing schema diagrams.
 - **README.md**: Project documentation file.
