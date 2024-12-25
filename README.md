@@ -28,4 +28,4 @@ Le projet est organisé de manière à séparer les scripts SQL, les données so
 
 ## Schéma en Étoile du Data Warehouse
 
-![DataWarehouse Star Schema](https://github.com/FirasKahlaoui/retail-data-warehouse/blob/master/DataWarehouse%20StarSchema.png)
+![DataWarehouse Star Schema](https://github.com/FirasKahlaoui/retail-data-warehouse/blob/master/DataWarehouse%20StarSchema.png#gh-light-mode-only)
