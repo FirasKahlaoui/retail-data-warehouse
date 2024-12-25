@@ -15,7 +15,6 @@ The repository includes SQL scripts, Python scripts for data generation, and doc
 
 ## Project Structure
 
-```
 - **.gitignore**: Configuration file to specify files and directories to be ignored by Git.
 - **DataWarehouse/**: Main directory containing the SQL Server project files.
     - **bin/Debug/**: Build output directory for debug configuration.
@@ -30,4 +29,3 @@ The repository includes SQL scripts, Python scripts for data generation, and doc
 - **tunisian_data/**: Directory containing Tunisian-specific data.
 - **DataWarehouse Schema/**: Directory containing schema diagrams.
 - **README.md**: Project documentation file.
-```
